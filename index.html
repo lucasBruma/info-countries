@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e3f17e3c22.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles-sass.css">
+    <title>Info countries</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__title">Where in the world?</div>
+        <div class="header__themes">
+            <div class="header__theme-icon"><i class="fa-solid fa-moon"></i></div>
+            <div class="header__theme-icon hidden"><i class="fa-solid fa-sun"></i></div>
+            <div class="header__theme-type">Light Mode</div>
+            <div class="header__theme-type hidden">Dark Mode</div>
+        </div>
+    </header>
+    <section class="search">
+        <input type="search" class="search__box" placeholder="Search for a country..">
+        <div class="filter">
+            <select class="filter__select">
+                <option value="" disabled selected hidden>Filter by Region</option>
+                <option value="All">All</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">Americas</option>
+                <option value="Antarctic">Antarctic</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div> 
+    </section>
+    <section class="countries"></section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/app.js" type="module"></script>
+    <script src="js/country.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+$color-dark-el: hsl(209, 23%, 22%);
+$color-dark-bg: hsl(207, 26%, 17%);
+$white:hsl(0, 0%, 100%);
+$color-light-txt: hsl(200, 15%, 8%);
+$color-light-input:hsl(0, 0%, 52%);
+$color-light-bg: hsl(0, 0%, 98%);
+
+$font-family: 'Nunito Sans', sans-serif;
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: $font-family;
+	color: $color-light-txt;
+	background-color: $color-light-bg;
+	transition: .3s ease all;
+
+	&.dark{
+		color: $white;
+		background-color: $color-dark-bg;
+	}
+}
+
+@mixin box{
+    border-radius: 10px;
+    box-shadow: -1px 0px 49px -11px rgb(0 0 0 / 20%);
+    background-color: $white;
+	font-family: $font-family;
+}
+
+.hidden{
+	display: none;
+}
+
+a{
+	text-decoration: none;
+	color: $color-light-txt;
+
+	body.dark &{
+		color: $white
+	}
+}

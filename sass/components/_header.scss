@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 15px;
+    background-color: $white;
+
+    body.dark &{
+        background-color: $color-dark-el;
+    }
+    
+    &__title{
+        font-weight: 800;
+    }
+
+    &__themes{
+        display: flex;
+        gap: 7px;
+        cursor: pointer;
+    }
+
+}
+
